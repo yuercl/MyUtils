@@ -1,4 +1,4 @@
-package com.ka.Test;
+package com.yuer.test;
 
 class Base {
 	static int i = 1;

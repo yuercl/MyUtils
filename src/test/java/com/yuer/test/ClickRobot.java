@@ -1,4 +1,4 @@
-package com.ka.Test;
+package com.yuer.test;
 
 import java.awt.AWTException;
 import java.awt.Robot;

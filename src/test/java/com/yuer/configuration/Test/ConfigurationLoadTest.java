@@ -1,4 +1,4 @@
-package com.ka.configuration.Test;
+package com.yuer.configuration.Test;
 
 import java.util.Arrays;
 import java.util.List;
