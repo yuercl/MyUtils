@@ -26,6 +26,7 @@ public class MongoDB4CRUDTest {
 	private DB db;
 	private DBCollection users;
 
+	@SuppressWarnings("deprecation")
 	@Before
 	public void init() {
 		try {
