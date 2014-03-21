@@ -19,7 +19,7 @@ MyUtils -> some tools or demo or test in java
 - fasejson and jacson and dom4j
 - slf4j and logback
 - zxing for qrcode
-
+- snappy for compress and uncompress
 
 ##mvn package to jar file 
 
