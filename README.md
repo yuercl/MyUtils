@@ -18,3 +18,4 @@ MyUtils -> some tools or demo or test in java
 - other some test
 - fasejson and jacson and dom4j
 - slf4j and logback
+- zxing for qrcode
