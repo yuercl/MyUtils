@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<config>
+	
+	<param name="POOL_CORE_SIZE" value="16" /><!-- 池中所保存的线程数，包括空闲线程 -->
+	<param name="POOL_MAX_SIZE" value="1024000" /><!-- 池中允许的最大线程数 -->
+	<param name="POOL_WAITE_SIZE" value="1" /><!-- 线程队列等待线程数量 -->
+	
+	<param name="SIGN_EXPIRES" value="600000" /><!-- 签名有效时间单位ms -->
+</config>

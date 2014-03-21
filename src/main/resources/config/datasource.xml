@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+
+	<param name="driver" value="com.mysql.jdbc.Driver" />
+	<param name="url" value="jdbc:mysql://192.168.16.222:3306/parkpay_v3?useUnicode=true&amp;characterEncoding=utf8&amp;zeroDateTimeBehavior=convertToNull" />
+	<param name="user" value="root" />
+	<param name="password" value="123456" />
+	<param name="initialSize" value="10" />
+	<param name="maxActive" value="10" />
+	<param name="maxIdle" value="10" />
+	<param name="timeBetweenEvictionRunsMillis" value="20000" />
+	<param name="minEvictableIdleTimeMillis" value="28000" />
+
+</config>
