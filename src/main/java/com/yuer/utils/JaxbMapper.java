@@ -19,7 +19,6 @@ import javax.xml.bind.Unmarshaller;
 import javax.xml.bind.annotation.XmlAnyElement;
 import javax.xml.namespace.QName;
 
-import junit.framework.Assert;
 
 import org.apache.commons.lang3.StringUtils;
 
@@ -135,8 +134,7 @@ public class JaxbMapper {
 	}
 
 	protected static JAXBContext getJaxbContext(Class clazz) throws JAXBException {
-		Assert.assertNotNull("'clazz' must not be null", clazz);
-		JAXBContext jaxbContext = jaxbContexts.get(clazz);
+ 		JAXBContext jaxbContext = jaxbContexts.get(clazz);
 		if (jaxbContext == null) {
 			try {
 				jaxbContext = JAXBContext.newInstance(clazz, CollectionWrapper.class);
