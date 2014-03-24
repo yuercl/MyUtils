@@ -1,6 +1,7 @@
 *.class
 *.classpath
 *.project
+*.iml
 /.settings
 
 # Package Files #
