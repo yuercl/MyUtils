@@ -3,6 +3,7 @@
 *.project
 *.iml
 /.settings
+/.idea
 
 # Package Files #
 *.jar
