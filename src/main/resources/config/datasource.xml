@@ -2,7 +2,7 @@
 <config>
 
 	<param name="driver" value="com.mysql.jdbc.Driver" />
-	<param name="url" value="jdbc:mysql://127.0.0.1:3306/mydatabases?useUnicode=true&amp;characterEncoding=utf8&amp;zeroDateTimeBehavior=convertToNull" />
+	<param name="url" value="jdbc:mysql://127.0.0.1:3306/mynews?useUnicode=true&amp;characterEncoding=utf8&amp;zeroDateTimeBehavior=convertToNull" />
 	<param name="user" value="root" />
 	<param name="password" value="" />
 	<param name="initialSize" value="10" />
