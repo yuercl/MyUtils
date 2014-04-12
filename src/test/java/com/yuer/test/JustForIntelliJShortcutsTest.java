@@ -6,13 +6,13 @@ package com.yuer.test;
  * Date: 14-3-24
  * Time: 下午4:09
  */
-public class TestIntelliJ {
+public class JustForIntelliJShortcutsTest {
 
     private String firstName;
     private String lastName;
 
     public static void main(String args[]) {
-        TestIntelliJ j = new TestIntelliJ();
+        JustForIntelliJShortcutsTest j = new JustForIntelliJShortcutsTest();
         j.setFirstName("fisrt");
         j.setLastName("last");
         j.hello();
@@ -22,16 +22,16 @@ public class TestIntelliJ {
         System.out.println("FirstName:" + getFirstName() + " LastName:" + getLastName());
     }
 
-    public TestIntelliJ(String firstName, String lastName) {
+    public JustForIntelliJShortcutsTest(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
     }
 
-    public TestIntelliJ(String firstName) {
+    public JustForIntelliJShortcutsTest(String firstName) {
         this.firstName = firstName;
     }
 
-    public TestIntelliJ() {
+    public JustForIntelliJShortcutsTest() {
     }
 
     public void setLastName(String lastName) {
