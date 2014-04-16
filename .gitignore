@@ -4,6 +4,7 @@
 *.iml
 /.settings
 /.idea
+/logs
 
 # Package Files #
 *.jar
