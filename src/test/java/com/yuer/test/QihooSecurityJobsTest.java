@@ -1,3 +1,4 @@
+package com.yuer.test;
 import org.junit.Test;
 
 public class QihooSecurityJobsTest {

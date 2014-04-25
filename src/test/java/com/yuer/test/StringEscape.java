@@ -1,3 +1,4 @@
+package com.yuer.test;
 import org.apache.commons.lang3.StringEscapeUtils;
 import org.junit.Test;
 
