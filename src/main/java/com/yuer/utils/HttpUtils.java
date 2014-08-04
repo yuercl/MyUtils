@@ -95,7 +95,7 @@ public class HttpUtils {
 
 	@SuppressWarnings("deprecation")
 	public String get(String url, String encode) throws Exception {
-		logger.info("正在抓取地址为：" + url);
+		logger.info("[正在抓取地址为：" + url + "]");
 		HttpGet httpget = new HttpGet(url);
 		response = httpclient.execute(httpget);
 		HttpEntity httpEntity = response.getEntity();
@@ -182,49 +182,6 @@ public class HttpUtils {
 
 	public void close() throws IOException {
 		httpclient.getConnectionManager().shutdown();
-	}
-
-	@SuppressWarnings("deprecation")
-	public String postQSHP(String url, List<NameValuePair> nvps) throws Exception {
-		HttpPost httppost = new HttpPost(url);
-		httppost.setEntity(new UrlEncodedFormEntity(nvps, HTTP.UTF_8));
-		response = httpclient.execute(httppost);
-		if (response.containsHeader("Location")) {
-			Header locationHeader = response.getFirstHeader("Location");
-			logger.info("Location" + locationHeader.getValue());
-			return this.get("http://uc.stuhome.net/" + locationHeader.getValue());
-		} else {
-			HttpEntity httpEntity = response.getEntity();
-			String html = null;
-			if (httpEntity != null) {
-				html = EntityUtils.toString(httpEntity, HTTP.UTF_8);
-				httpEntity.consumeContent();
-			}
-			return html;
-		}
-	}
-
-	@SuppressWarnings("deprecation")
-	public String postWeibo(String url, List<NameValuePair> nvps) throws Exception {
-		HttpPost httppost = new HttpPost(url);
-		httppost.setEntity(new UrlEncodedFormEntity(nvps, HTTP.UTF_8));
-		response = httpclient.execute(httppost);
-		if (response.containsHeader("Location")) {
-			Header locationHeader = response.getFirstHeader("Location");
-			logger.info("Location" + locationHeader.getValue());
-
-			// http://newlogin.sina.cn/crossDomain/?g=4uF7CpOz1BP7zANozP5Ra5dLxfG&t=1362741224&m=a5f7&r=&u=http%3A%2F%2Fweibo.cn%2F%3Fs2w%3Dlogin%26gsid%3D4uF7CpOz1BP7zANozP5Ra5dLxfG%26vt%3D4&cross=1&vt=4
-
-			return this.get(locationHeader.getValue());
-		} else {
-			HttpEntity httpEntity = response.getEntity();
-			String html = null;
-			if (httpEntity != null) {
-				html = EntityUtils.toString(httpEntity, HTTP.UTF_8);
-				httpEntity.consumeContent();
-			}
-			return html;
-		}
 	}
 
 }
