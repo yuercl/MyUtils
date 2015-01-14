@@ -14,6 +14,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<start-class>mariuszs.hessian.Application</start-class>
 		<java.version>1.7</java.version>
+		<mahout.version>0.9</mahout.version>
 	</properties>
 
 	<parent>
@@ -264,9 +265,38 @@
 			<version>3.2</version>
 		</dependency>
 		<dependency>
-		    <groupId>net.objecthunter</groupId>
-		    <artifactId>exp4j</artifactId>
-		    <version>0.4.4</version>
+			<groupId>net.objecthunter</groupId>
+			<artifactId>exp4j</artifactId>
+			<version>0.4.4</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.mahout</groupId>
+			<artifactId>mahout-core</artifactId>
+			<version>${mahout.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.mahout</groupId>
+			<artifactId>mahout-examples</artifactId>
+			<version>${mahout.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.mahout</groupId>
+			<artifactId>mahout-integration</artifactId>
+			<version>${mahout.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.mortbay.jetty</groupId>
+					<artifactId>jetty</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.apache.cassandra</groupId>
+					<artifactId>cassandra-all</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>me.prettyprint</groupId>
+					<artifactId>hector-core</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 	</dependencies>
 
